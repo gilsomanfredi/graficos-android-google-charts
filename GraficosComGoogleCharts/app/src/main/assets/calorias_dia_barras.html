@@ -1,0 +1,38 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         [android.getTituloRefeicao(),    android.getTituloConsumidas(),     android.getTituloNecessarias()],
+         [android.getTituloCafe(),        android.getConsumidoCafe(),        android.getNecessarioCafe()],
+         [android.getTituloLancheManha(), android.getConsumidoLancheManha(), android.getNecessarioLancheManha()],
+         [android.getTituloAlmoco(),      android.getConsumidoAlmoco(),      android.getNecessarioAlmoco()],
+         [android.getTituloLancheTarde(), android.getConsumidoLancheTarde(), android.getNecessarioLancheTarde()],
+         [android.getTituloJantar(),      android.getConsumidoJantar(),      android.getNecessarioJantar()],
+         [android.getTituloLancheNoite(), android.getConsumidoLancheNoite(), android.getNecessarioLancheNoite()]
+      ]);
+
+    var options = {
+      title : 'Calorias Consumidas/Necessárias',
+      vAxis: {title: android.getTituloCalorias()},
+      hAxis: {title: android.getTituloRefeicao()},
+      seriesType: 'bars',
+      series: {1: {type: 'line'}},
+      legend: { position: 'bottom' }
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+
+    </script>
+</head>
+<body>
+<div id="chart_div" style="width: 100%; height: 100%;"></div>
+</body>
+</html>

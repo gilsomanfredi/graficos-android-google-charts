@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Gráficos com Google Charts</string>
+
+    <string name="title_activity_taxa_metabolica">Taxa Metabólica Basal</string>
+    <string name="tv_sexo">Sexo</string>
+    <string name="rb_feminino">Feminimo</string>
+    <string name="rbMasculino">Masculino</string>
+    <string name="tv_idade">Idade</string>
+    <string name="et_idade">Informe sua idade:</string>
+    <string name="tv_peso">Peso</string>
+    <string name="et_peso">Informe seu peso em KG:</string>
+    <string name="tv_altura">Altura</string>
+    <string name="et_altura">Informe sua altura em CM:</string>
+    <string name="tv_nivel_atividae_fisica">Nível de Atividade Física</string>
+    <string name="informe_idade">Informe sua idade</string>
+    <string name="Informe_peso">Informe seu peso</string>
+    <string name="informe_altura">Informe sua altura</string>
+    <string name="idade_invalida">Informe uma idade válida</string>
+    <string name="peso_invalido">Informe um peso válido</string>
+    <string name="altura_invalida">Informe uma altura válida</string>
+
+    <string name="title_activity_calorias">Calorias por refeição</string>
+    <string name="cafe_manha">Café da Manhã</string>
+    <string name="lanche_manha">Lanche da Manhã</string>
+    <string name="almoco">Almoço</string>
+    <string name="lanche_tarde">Lanche da Tarde</string>
+    <string name="jantar">Jantar</string>
+    <string name="lanche_noite">Lanche da Noite</string>
+    <string name="calorias_refeicao">Informe as calorias dessa refeição</string>
+    <string name="caloria_invalida_refeicao">Calorias inválidas para o </string>
+
+    <string name="title_activity_graficos">Graficos</string>
+    <string name="grafico_barras">Calorias Consumidas X Necessárias</string>
+    <string name="grafico_pizza">Calorias do Dia</string>
+    <string name="refeicao">Refeição</string>
+    <string name="calorias">Calorias</string>
+    <string name="consumidas">Consumidas</string>
+    <string name="necessarias">Necessárias</string>
+
+</resources>
