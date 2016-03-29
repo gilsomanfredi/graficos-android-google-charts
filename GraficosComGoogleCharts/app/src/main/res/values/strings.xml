@@ -4,7 +4,7 @@
     <string name="title_activity_taxa_metabolica">Taxa Metabólica Basal</string>
     <string name="tv_sexo">Sexo</string>
     <string name="rb_feminino">Feminimo</string>
-    <string name="rbMasculino">Masculino</string>
+    <string name="rb_masculino">Masculino</string>
     <string name="tv_idade">Idade</string>
     <string name="et_idade">Informe sua idade:</string>
     <string name="tv_peso">Peso</string>
@@ -12,6 +12,7 @@
     <string name="tv_altura">Altura</string>
     <string name="et_altura">Informe sua altura em CM:</string>
     <string name="tv_nivel_atividae_fisica">Nível de Atividade Física</string>
+    <string name="btn_informar_calorias">Informar Calorias Consumidas</string>
     <string name="informe_idade">Informe sua idade</string>
     <string name="Informe_peso">Informe seu peso</string>
     <string name="informe_altura">Informe sua altura</string>
@@ -26,10 +27,11 @@
     <string name="lanche_tarde">Lanche da Tarde</string>
     <string name="jantar">Jantar</string>
     <string name="lanche_noite">Lanche da Noite</string>
+    <string name="btn_gerar_graficos">Gerar Gráficos</string>
     <string name="calorias_refeicao">Informe as calorias dessa refeição</string>
     <string name="caloria_invalida_refeicao">Calorias inválidas para o </string>
 
-    <string name="title_activity_graficos">Graficos</string>
+    <string name="title_activity_graficos">Escolha o tipo de Gráfico</string>
     <string name="grafico_barras">Calorias Consumidas X Necessárias</string>
     <string name="grafico_pizza">Calorias do Dia</string>
     <string name="refeicao">Refeição</string>

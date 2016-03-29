@@ -2,10 +2,8 @@ package br.com.manfredi.android.graficoscomgooglecharts;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 
@@ -26,22 +24,18 @@ public class CaloriasActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calorias);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        etCafe = (EditText) findViewById(R.id.etCafe);
-        etLancheManha = (EditText) findViewById(R.id.etLancheManha);
-        etAlmoco = (EditText) findViewById(R.id.etAlmoco);
-        etLancheTarde = (EditText) findViewById(R.id.etLancheTarde);
-        etJantar = (EditText) findViewById(R.id.etJantar);
-        etLancheNoite = (EditText) findViewById(R.id.etLancheNoite);
+        etCafe = (EditText) findViewById(R.id.et_cafe);
+        etLancheManha = (EditText) findViewById(R.id.et_lanche_manha);
+        etAlmoco = (EditText) findViewById(R.id.et_almoco);
+        etLancheTarde = (EditText) findViewById(R.id.et_lanche_tarde);
+        etJantar = (EditText) findViewById(R.id.et_jantar);
+        etLancheNoite = (EditText) findViewById(R.id.et_lanche_noite);
 
         grafico = (Grafico) getIntent().getSerializableExtra("grafico");
     }
 
-    public void btnGraficoOnClick(View view) {
+    public void btnGerarGraficosOnClick(View view) {
 
         try {
 

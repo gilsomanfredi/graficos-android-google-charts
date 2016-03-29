@@ -2,14 +2,13 @@ package br.com.manfredi.android.graficoscomgooglecharts;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import br.com.manfredi.android.graficoscomgooglecharts.entity.Grafico;
 import br.com.manfredi.android.graficoscomgooglecharts.entity.NivelAtividadeFisica;
@@ -30,14 +29,12 @@ public class TaxaMetabolicaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taxa_metabolica);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        rbFeminino = (RadioButton) findViewById(R.id.rbFeminino);
-        rbMasculino = (RadioButton) findViewById(R.id.rbMasculino);
-        etIdade = (EditText) findViewById(R.id.etIdade);
-        etPeso = (EditText) findViewById(R.id.etPeso);
-        etAltura = (EditText) findViewById(R.id.etAltura);
+        rbFeminino = (RadioButton) findViewById(R.id.rb_feminino);
+        rbMasculino = (RadioButton) findViewById(R.id.rb_masculino);
+        etIdade = (EditText) findViewById(R.id.et_idade);
+        etPeso = (EditText) findViewById(R.id.et_peso);
+        etAltura = (EditText) findViewById(R.id.et_altura);
         spinnerAtividadeFisica = (Spinner) findViewById(R.id.spinner_atividade_fisica);
 
         spinnerAtividadeFisica.setAdapter(new ArrayAdapter<NivelAtividadeFisica>(
@@ -46,7 +43,7 @@ public class TaxaMetabolicaActivity extends AppCompatActivity {
                 NivelAtividadeFisica.values()));
     }
 
-    public void btnProximoOnClick(View view) {
+    public void btnCaloriasOnClick(View view) {
 
         try {
 
@@ -73,7 +70,7 @@ public class TaxaMetabolicaActivity extends AppCompatActivity {
 
         } catch (Exception e) {
 
-            Snackbar.make(view, e.getMessage(), Snackbar.LENGTH_LONG).show();
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
 
     }

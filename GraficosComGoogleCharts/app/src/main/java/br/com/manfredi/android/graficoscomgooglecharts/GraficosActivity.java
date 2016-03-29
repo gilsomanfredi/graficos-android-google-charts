@@ -2,7 +2,6 @@ package br.com.manfredi.android.graficoscomgooglecharts;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
@@ -20,12 +19,8 @@ public class GraficosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graficos);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        webView = (WebView) findViewById(R.id.webView);
+        webView = (WebView) findViewById(R.id.web_view);
         webView.addJavascriptInterface(new WebAppInterface(), "android");
         webView.getSettings().setJavaScriptEnabled(true);
 
