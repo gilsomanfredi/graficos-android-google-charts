@@ -29,6 +29,7 @@
     <string name="lanche_noite">Lanche da Noite</string>
     <string name="btn_gerar_graficos">Gerar Gráficos</string>
     <string name="calorias_refeicao">Informe as calorias dessa refeição</string>
+    <string name="caloria_invalida_refeicao">Calorias inválidas para o </string>
 
     <string name="title_activity_graficos">Escolha o tipo de Gráfico</string>
     <string name="grafico_barras">Calorias Consumidas X Necessárias</string>
