@@ -38,16 +38,7 @@
             android:background="@android:color/transparent"
             android:onClick="btnBarrasOnClick"
             android:src="@mipmap/ic_equalizer_black_48dp" />
-
-        <ImageButton
-            android:id="@+id/btn_linhas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:background="@android:color/transparent"
-            android:onClick="btnLinhasOnClick"
-            android:src="@mipmap/ic_equalizer_black_48dp" />
+        
     </LinearLayout>
 
     <WebView

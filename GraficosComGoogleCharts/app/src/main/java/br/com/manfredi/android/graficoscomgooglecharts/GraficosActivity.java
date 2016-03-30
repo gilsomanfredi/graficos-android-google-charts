@@ -29,11 +29,6 @@ public class GraficosActivity extends AppCompatActivity {
         btnBarrasOnClick(null);
     }
 
-    public void btnVoltarOnClick(View view) {
-
-        finish();
-    }
-
     public void btnPizzaOnClick(View view) {
 
         webView.loadUrl("file:///android_asset/calorias_dia_pizza.html");
